@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.header {
+    height: 50px;
+    background-color: #ccc;
+    line-height: 50px;
+    padding-left: 15px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+}
+
+#gallery {
+}
+
+.image-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+    width: 770px;
+    margin-left: -10px;
+    padding: 1vw;
+    background-color: rgba(255, 187, 58, 0.27);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image input {
+    width: 100%;
+}
+
+#gallery {
+    padding: 5px;
+    width: 320px;
+    margin: 1vw;
+}
+
+.galleryWrapper {
+    margin-left: -10px;
+    margin-top: -530px;
+    position: absolute;
+    width: 790px;
+    z-index: 100;
+}
+
+.galleryWrapper .back {
+    background-color: #ccc;
+    opacity: 0.8;
+    border: 1px solid #000;
+    width: 100%;
+    min-height: 540px;
+    position: absolute;
+}
+
+.galleryWrapper .image-max {
+    width: 95%;
+    position: relative;
+    margin: 35px 0 0 20px;
+}
+
+.galleryWrapper .close {
+    position: absolute;
+    float: right;
+    z-index: 200;
+    margin-left: -20px;
+}
+
+#upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    outline: 2px dashed #5d5d5d;
+    outline-offset: -12px;
+    background-color: #e0f2f7;
+    color: #1f3c44;
+}
+
+#upload-container img {
+    width: 40%;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+#upload-container label {
+    font-weight: bold;
+}
+
+#upload-container label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#upload-container div {
+    position: relative;
+    z-index: 10;
+    margin-left: 25px;
+}
+
+#upload-container input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+}
+
+#upload-container.dragover {
+    background-color: #fafafa;
+    outline-offset: -17px;
+}

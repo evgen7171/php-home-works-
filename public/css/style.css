@@ -1,0 +1,565 @@
+/*
+color: #fff;
+background-color: #fed136;
+font-family: Montserrat;
+font-family: "Droid Serif";
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1400px;
+}
+
+.header_main {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    margin: 0 auto;
+    /*width: 1424px;*/
+    width: 100%;
+    height: 729px;
+    background: url(/public/img/slider.png) no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    padding-top: 44px;
+}
+
+.slider .header {
+    display: inline-block;
+    width: 100%;
+}
+
+.slider .header .logo {
+    float: left;
+    margin-left: 22px;
+}
+
+.slider .header .logo a {
+    color: #fed136;
+    font-family: "Wisdom - Script", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+}
+
+.slider .header .logo a:hover {
+    color: #fff;
+}
+
+.slider .header .menu {
+    float: right;
+}
+
+.slider .header .menu ul {
+    display: flex;
+}
+
+.slider .header .menu .list {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.slider .header .menu .list:last-child {
+    /*margin-right: 242px;*/
+    margin-right: 42px;
+}
+
+.slider .header .menu .link {
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.slider .header .menu .link:hover {
+    color: #fed136;
+}
+
+.slider .text h3 {
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1.88px;
+    margin-top: 52px;
+    text-align: center;
+}
+
+.slider .text p {
+    color: #ffffff;
+    font-family: "Droid Serif", sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 212px;
+    text-align: center;
+}
+
+.slider .text p:first-letter {
+    letter-spacing: -1px;
+}
+
+.slider div {
+    /*margin-top: 60px;*/
+    text-align: center;
+}
+
+.button {
+    padding: 25px 50px;
+    line-height: 65px;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #fed136;
+}
+
+.products {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #f7f7f7;
+}
+
+.products .title {
+    text-align: center;
+}
+
+.products .title h3 {
+    color: #222222;
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+}
+
+.products .title p {
+    color: #777777;
+    font-family: "Droid Serif", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.products .row {
+    margin: 76px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+}
+
+.products .row .item {
+    width: 290px;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.products .row .item .container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .row .item {
+}
+
+.products .row .item:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.products .row .item .text h3 {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.products .row .item .text p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.products .row .item .price_buy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products .row .item .buy {
+    width: 120px;
+    height: 30px;
+}
+
+.about_us__item {
+    display: flex;
+    justify-content: center;
+}
+
+.about_us .title {
+    text-align: center;
+}
+
+.about_us .title h3 {
+    color: #222222;
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.about_us .title p {
+    color: #777777;
+    font-family: "Droid Serif", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 19px;
+}
+
+.about_us .about_us__text h3 {
+    width: 207px;
+    height: 43px;
+    color: #222222;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.about_us .about_us__text h3:first-child {
+    letter-spacing: -0.45px;
+    text-transform: uppercase;
+}
+
+.about_us .about_us__text h3:nth-child(2) {
+    letter-spacing: -0.45px;
+}
+
+.about_us .about_us__text {
+    width: 307px;
+}
+
+.about_us .about_us__text p {
+    color: #777777;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    margin-top: 17px;
+}
+
+.about_us__item {
+    display: flex;
+    margin: 106px 0;
+}
+
+.about_us__item:first-child {
+    margin-top: 85px;
+}
+
+.about_us__item:last-child {
+    margin-top: 127px;
+}
+
+.about_us__item .left h3, .about_us__item .left p {
+    text-align: right;
+}
+
+.about_us__item .right h3, .about_us__item .right p {
+    text-align: left;
+}
+
+.about_us__item .img {
+    margin: 0 45px;
+}
+
+.about_us__circle {
+    width: 168px;
+    height: 168px;
+    border: 7px solid #f1f1f1;
+    background-color: #fed136;
+    border-radius: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_us__circle p {
+    text-align: center;
+    width: 107px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.45px;
+}
+
+.icons_soc_net {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin: 14px auto;
+    background-color: #f9f9f9;
+}
+
+.icons_soc_net span {
+    color: #222222;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    background-color: #f9f9f9;
+    border: 3px solid #222222;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our_amazing_team .title h3 {
+    color: #222222;
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.our_amazing_team .title p {
+    color: #777777;
+    font-family: "Droid Serif", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.our_amazing_team .desc {
+    width: 600px;
+    color: #777777;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 50px auto;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+}
+
+.team .team__item {
+    margin: 0 30px;
+}
+
+.logos {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.contact_us {
+    margin: 60px auto;
+    border: 1px solid #000;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+    border-color: #00aced;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+    border-color: #3b5998;
+}
+
+.fa-pinterest-p:hover {
+    color: #cb2028;
+    border-color: #cb2028;
+}
+
+
+.contact_us .title {
+    margin: 110px auto 75px;
+    text-align: center;
+}
+
+.contact_us .title h3 {
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact_us .title p {
+    margin-top: 23px;
+    color: #777777;
+    font-family: "Droid Serif", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.contact_us {
+    width: 1400px;
+    height: 676px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_us .row {
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
+}
+
+.contact_us .button-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contact_us .button {
+    padding: 12px 47px;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact_us .item {
+    width: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_us .left {
+    height: 210px;
+    margin-right: 30px;
+}
+
+.contact_us input {
+    height: 10px;
+}
+
+.contact_us input,
+.contact_us textarea {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+
+    color: #bbbbbb;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.social {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.social span {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40px;
+    background-color: #000;
+    color: #fff;
+}
+
+.social .fa-twitter:hover {
+    color: #fff;
+    background-color: #00aced;
+}
+
+.social .fa-facebook-f:hover {
+    color: #fff;
+    background-color: #3b5998;
+}
+
+.social .fa-pinterest-p:hover {
+    color: #fff;
+    background-color: #cb2028;
+}
+
+.fa-google-plus:hover {
+    background-color: #da2713;
+}
+
+.footer {
+    display: flex;
+}
+
+.feed {
+    background-color: #222222;
+    color: #fff;
+    padding-top: 1px;
+}
+
+.feed .title {
+    margin: 69px auto 75px;
+    text-align: center;
+}
+
+.feed .title h3 {
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.feed .title p {
+    margin-top: 23px;
+    color: #777777;
+    font-family: "Droid Serif", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.feed .item {
+    border: 1px solid #cccccc;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px;
+}

@@ -1,0 +1,12 @@
+.login {
+    width: 300px;
+    margin: 15% auto;
+    padding: 15px;
+    background-color: #ccc;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.login .form-control {
+    margin-bottom: 15px;
+}
